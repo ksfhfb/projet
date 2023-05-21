@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agence LOGIN</title>
+    <link rel="stylesheet" href="C:\Users\dell\Desktop\Nouveau dossier\login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                     
+                <video autoplay loop muted plays-inline class="vid">
+                    <source src="Vidéo.LOGIN.mp4" type="video/mp4">    
+                </video>      
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form action="C:\Users\dell\Desktop\Nouveau dossier\Page1.html" method="post">
+                                <center><h1 class="main-heading"><span style="color: rgba(156, 145, 145, 0.899);"> Connectez-vous</span></h1></center>
+                                <input type="text" name="name" placeholder="Votre nom" required>
+                                <input type="password" name="name" placeholder="Votre mot de passe" required id="myInput"><br><br>
+                                <input type="checkbox" onclick="myFunction()"> <span style="color:#7c2727e6 ;" > Show Password </span>
+                                <script>
+                                    function myFunction() {
+                                      var x = document.getElementById("myInput");
+                                      if (x.type === "password") {
+                                        x.type = "text";
+                                      } else {
+                                        x.type = "password";
+                                      }
+                                    }
+                                    </script>
+				                <button>Connexion</button>
+				                <p class="message"><span style="color: rgba(214, 80, 80, 0.863);"> Non inscrit ? </span><a href="#">Inscrivez-vous !</a></p>
+				            </form>
+                            <form onsubmit="showAlert();" class="register-form" >
+                                <center><h1 class="main-heading"><span style="color: rgba(199, 153, 153, 0.899);"> Inscrivez-vous</span></h1></center>
+                                <input type="text" name="name" placeholder="Nom" required>
+                                <input type="text" name="name" placeholder="Adresse" required>
+                                <input type="text" name="name" placeholder="Numéro de téléphone" required>
+                                <input type="email" name="name" placeholder="Email" required>
+                                <input type="password" name="name" placeholder="Saisir un mot de passe" required>
+                                <input type="submit" value="Inscription" id="bouton">
+				                <p class="message"><span style="color: rgb(176, 56, 56);"> Déjà inscrit ? </span><a href="#">Connexion</a></p>
+			             </div>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
+    <script>
+        function showAlert() {
+            alert("Vous êtes bien inscris !");
+        }
+    </script>
+</body>
+</html>
